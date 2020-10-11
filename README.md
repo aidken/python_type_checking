@@ -11,7 +11,7 @@ offers is potential mistakes like putting a string into a property which should
 an integer?
 
 ### sales3.py
-[mypy](http://mypy-lang.org/) reports erros on reduce functions. My code returns value of int or float
+[mypy](http://mypy-lang.org/) reports errors on reduce functions. My code returns value of int or float
 correctly, but mypy thinks it is wrong.
 
 This is understandable. Real values will be known when code really executes.
@@ -21,7 +21,7 @@ such as reduce().
 I added more of type hints to helper functions that reduce() uses, but mypy
 raises errors anyway.
 
-So, here is my qusetion. What is mypy for, if it does not understand code correctly. In what ways does it help users?
+So, here is my question. What is mypy for, if it does not understand code correctly. In what ways does it help users?
 
 When I define a class such as order, and I want its itemlines property to be a list of another class Itemline, I can write `List[Itemline]`, which is nice. When I do this, definition of `class Itemline` should be come before definition of `class Order`. This is understandable.
 
